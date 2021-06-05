@@ -5,23 +5,23 @@
 def nice(val):
     if val == 1:
         print("▼ 0")
-        print("\n\n  [KONEC]")
+        print("\n\n  [END]")
         return
     else:
         val = val - 1
         print("┃",val)
         nice(val)
 
-def ziskat():
-    global cislo
+def get():
+    global nmbr
     try:
-        cislo = int(input("Číslo: "))
+        nmbr = int(input("Number: "))
     except:
-        print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n---------------------------------------------\n               To není číslo!\n---------------------------------------------\n\n")
-        ziskat()
-    if cislo > 995:
-        print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n---------------------------------------------\n             Zadej menší číslo!\n---------------------------------------------\n\n")
-        ziskat()
+        print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n---------------------------------------------\n               That is not a number!\n---------------------------------------------\n\n")
+        get()
+    if nmbr > 995:
+        print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n---------------------------------------------\n             Enter smaller number!\n---------------------------------------------\n\n")
+        get()
     else:
         pass
 
@@ -29,9 +29,9 @@ def ziskat():
 # START
 #
 
-print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n---------------------------------------------\n   Zadej, od jakého čísla mám počítat dolů\n---------------------------------------------\n\n")
-ziskat()
+print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n---------------------------------------------\n   Enter the number from which to count down\n---------------------------------------------\n\n")
+get()
 print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
-print("  [ZAČÁTEK]\n\n")
-print("┏", cislo)
-nice(cislo)
+print("  [START]\n\n")
+print("┏", nmbr)
+nice(nmbr)
