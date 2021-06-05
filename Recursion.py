@@ -1,5 +1,5 @@
 #
-#  FUNKCE
+#  FUNCTIONS
 #
 
 def nice(val):
