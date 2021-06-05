@@ -24,6 +24,12 @@ def get():
         get()
     else:
         pass
+    
+    if nmbr < 1:
+        print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n---------------------------------------------\n             Enter bigger number!\n---------------------------------------------\n\n")
+        get()
+    else:
+        pass
 
 #
 # START
